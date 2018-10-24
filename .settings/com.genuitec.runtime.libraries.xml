@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project adv-config="true">
+  <add-on id="hibernate.extra"/>
+  <add-on id="web.struts2.dwr"/>
+  <add-on id="web.struts2.jfreechart"/>
+  <add-on id="web.struts2.struts1"/>
+  <add-on id="web.struts2.test"/>
+  <add-on id="web.struts2.dojo"/>
+  <add-on id="web.struts2.sitemesh"/>
+  <add-on id="web.struts2.plexus"/>
+  <add-on id="web.struts2.spring"/>
+  <add-on id="web.struts2.codebehind"/>
+  <add-on id="web.struts2.javatemplates"/>
+  <add-on id="web.struts2.pell-multipart"/>
+  <add-on id="web.struts2.tiles"/>
+  <add-on id="web.struts2.jasper"/>
+  <add-on id="web.struts2.oval"/>
+  <add-on id="web.struts2.config-browser"/>
+  <add-on id="web.struts2.osgi"/>
+  <add-on id="web.struts2.sitegraph"/>
+  <add-on id="web.struts2.rest"/>
+  <disabled-container path="com.genuitec.runtime.library/com.genuitec.struts_2.1"/>
+  <container path="com.genuitec.runtime.library/com.genuitec.struts_2.1">
+    <forced-facet id="web.struts" version="1.0"/>
+    <forced-facet id="me.spring" version="3.1"/>
+    <forced-facet id="jst.jsf" version="2.1"/>
+    <forced-facet id="jsr.base" version="2.0"/>
+    <forced-facet id="jst.jsf" version="1.2"/>
+    <forced-facet id="jst.jsf" version="2.2"/>
+    <forced-facet id="me.spring" version="4.1"/>
+    <forced-facet id="jst.jsf" version="2.0"/>
+    <forced-facet id="jsr.base" version="1.0"/>
+    <forced-facet id="web.struts" version="1.3"/>
+    <forced-facet id="me.spring" version="3.0"/>
+    <forced-facet id="me.spring" version="2.5"/>
+    <forced-facet id="jst.jsf" version="1.1"/>
+    <forced-facet id="web.struts" version="1.2"/>
+    <forced-facet id="web.struts" version="1.1"/>
+    <forced-facet id="me.spring" version="2.0"/>
+    <forced-facet id="me.spring" version="1.2"/>
+  </container>
+</project>

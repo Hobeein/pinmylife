@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="pmlPageAction" namespace="/" extends="json-default,struts-default">
+		<interceptors>
+			<interceptor name="myIntercep" class="com.intercepter.Pmlintercepteor">
+			</interceptor>
+			<interceptor-stack name="myDefaultStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="myIntercep"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="myDefaultStack">
+		</default-interceptor-ref>
+		<global-results>
+			<result name="error">/pml_LoginPage.jsp</result>
+		</global-results>
+		<action name="pml_LoginAction" method="loginFB" class="com.action.Pml_loginAction">
+			<result name="loginSuccess">/pml_MainPage.jsp</result>
+			<result name="PoEisNotExist">/pml_LoginPage.jsp</result>
+			<result name="passWordFalse">/pml_LoginPage.jsp</result>
+		</action>
+		<action name="pml_LogupAction" method="logupFB" class="com.action.Pml_logupAction">
+			<result name="logupFail">/pml_LoginPage.jsp</result>
+			<result name="logupSuccess">/pml_LoginPage.jsp</result>
+		</action>
+		<action name="Pml_MainPageAction" class="com.action.Pml_MainPageAction" method="mainPageFB">
+			<result type="json" name="Success">
+				<param name="root">data</param>
+			</result>
+		</action>
+		<action name="Pml_userInfoAction" class="com.action.Pml_userInfoAction" method="userInfoFB">
+			<result type="json" name="success">
+				<param name="root">data</param>
+			</result>
+		</action>
+		<action name="pml_uifUpdateAction" class="com.action.pml_uifUpdateAction" method="uifUpdateFB">
+			<result type="json" name="success">
+				<param name="root">data</param>
+			</result>
+		</action>
+		<action name="Pml_pwUpdateAction" class="com.action.Pml_pwUpdateAction" method="pwUpdateFB">
+			<result type="json" name="success">
+				<param name="root">data</param>
+			</result>
+		</action>
+		<action name="Pml_porUpdateAction" class="com.action.Pml_porUpdateAction" method="porUpdateFB">
+			<result type="json" name="success">
+				<param name="root">data</param>
+			</result>
+		</action>
+		<action name="Pml_ImgShareUploadAction" class="com.action.Pml_ImgShareUploadAction" method="imgShareFB">
+			<result type="json" name="feedBack">
+				<param name="root">data</param>
+			</result>		
+		</action>
+		<action name="Pml_ImgUploadAction" class="com.action.Pml_ImgUploadAction" method="uploadFB">
+			<result name="Success">/testjsp.jsp</result>
+			<result name="Fail">/testjsp.jsp</result>
+		</action>
+		<action name="Pml_UploadLogAction" class="com.action.Pml_ImgUploadAction" method="loginCheck">
+			<result name="Success">/testjsp.jsp</result>
+			<result name="Fail">/testjsp.jsp</result>
+		</action>
+	</package>
+	<package name="ajax" namespace="/" extends="json-default,struts-default">
+		<action name="AJaXTextActoin" class="com.action.AJaXTextActoin" method="textFeadBack">
+			<result name="user" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
+	</package>
+</struts>    

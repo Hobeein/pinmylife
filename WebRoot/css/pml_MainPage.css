@@ -1,0 +1,287 @@
+html{
+	overflow-x: hidden;
+}
+body{
+	background-color: #fae9dc;
+}
+::selection{
+	background-color: pink;
+}
+#fatherBox{
+	padding: 0px;
+	position: relative;
+	width: 1277px;
+	height: auto;
+	margin: 0px auto;
+	background-color: #fae9dc;
+}
+.floatFindBox{
+	position: relative;
+	margin-top: 1px;
+	position: fixed;
+	width: 15px;
+	height: 624px;
+	background-color:white;
+	z-index: 2;
+}
+.InnerFindBox{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.InnerScrollBox{
+	position: relative;
+	width: calc(100% + 17px);
+	height: 100%;
+	margin: 0px auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.userInfoShow{
+	position: relative;
+	margin-top: 10px;
+	width: 241px;
+	height:150px;
+	margin-bottom: 10px;
+	border-top: 1px #b1a5a5d6 solid;
+	border-bottom: 1px #b1a5a5d6 solid;
+}
+.InnerScrollBox li{
+	position: relative;
+	list-style: none;
+	width: calc(100% - 17px);
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+	text-align: center;
+	background-color: brown;
+}
+.userInfoCtrl{
+	position: relative;
+	width: 95%;
+	height: 100%;
+	margin: 0px auto;
+}
+.uifCtrlUp{
+	position: relative;
+	padding: 1px;
+	width: calc(100% - 2px);
+	height: calc(50% - 2px);
+}
+.userPortrait{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin-top: 5px;
+	border: 1px solid #e8bfbfa1;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.userPortrait img{
+	position: absolute;
+	width: auto;
+	height: calc(100px + 2px);
+	margin: 0px auto;
+}
+.usernameAndSex{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 60px;
+	margin-top: -20px;
+	width: calc(100% - 60px);
+	height: 40px;
+	font-size: 14px;
+}
+.usernameAndSex font{
+	line-height: 40px;
+}
+.setting{
+	position:absolute;
+	top:10px;
+	right:8px;
+	width: 20px;
+	height: 20px;
+	border-radius:8px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+}
+.setting:ACTIVE{
+	box-shadow: 0px 0px 0px 0px;
+}
+.setting img{
+	width: 100%;
+	height: 100%;
+}
+.f1{
+	margin-right: 10px;
+}
+.uifCtrlBtm{
+	position: relative;
+	border-top:1px solid #e4e4e4;
+	padding-top:5px;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	font-size: 15px;
+    font-family: "YouYuan";
+}
+.updateInfoBox{
+	position: relative;
+	margin: 0px auto;
+	top:10px;
+	font-family: "YouYuan";
+}
+.updateInfoBox input{
+	border: none;
+	border-bottom: 1px pink solid;
+	outline: none;
+}
+.sign{
+	resize: none;
+	width: 235px;
+	height: 100px;
+	outline-color: pink;
+}
+.uifUpdcompelet{
+    position: relative;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    top: -10px;
+}
+.uifUpdcompelet:ACTIVE{
+	top: -9px;
+	height: 29px;
+	border-bottom:none; 
+}
+.uifupc2{
+	margin-left: 10px;
+}
+#updFB{
+    position: relative;
+    left: 25px;
+    top: -5px;
+}
+.moodImgUpload {
+    font-family: "YouYuan";
+}
+.fileClick{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: 42px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 4px dotted pink;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+    outline: none;
+}
+.fileClick:ACTIVE{
+	box-shadow: 0px 0px 0px 0px;
+}
+.btnTxt{
+    position: absolute;
+    left: 70px;
+    margin-top: -31px;
+    font-size: 185px;
+    color: #d6d6d6;
+}
+.backShowImgBox{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-left: 46px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.backShowImgBox img{
+	position:absolute;
+	width: auto;
+	height: 100%;
+	margin-left:50%;
+}
+#bewVal {
+    resize: none;
+    position: relative;
+    width: 235px;
+    height: 105px;
+    margin-top: 15px;
+    outline: pink;
+}
+.titleImgShare {
+    position: relative;
+    color: #e65a73;
+}
+.upLcomp {
+    position: relative;
+    width: 70px;
+    height: 35px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
+    background-color: pink;
+}
+.upLcomp:ACTIVE{
+	box-shadow: 0px 0px 0px 0px;
+}
+.waterFall{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	width: calc(100% - 50px);
+	height: auto;
+	right:0px;
+}
+.wfInnerBox{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.wfItem{
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+	list-style: none;
+	width: 370px;
+	height: auto;
+	display:inline-block;
+	max-height: 525px;
+	overflow: hidden;
+	border-radius: 15px;
+	border: 2px white solid;
+	background-color: white;
+}
+.wfItem img{
+	margin-bottom:-3px;
+	padding: 0px;
+	width: 100%;
+}
+.imgInfo{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 0px;
+	background-color: rgba(0,0,0,0.2);
+	transition: 500ms;
+	color:white;
+	text-align: center;
+}
+.wfItem:hover .imgInfo{
+	height: 35px;	
+}
+.imgInfo font{
+	margin: 10px;
+	line-height: 35px;
+}
